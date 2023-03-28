@@ -279,7 +279,7 @@ def pre_process(model_name, batch_size, device, small_subset):
     # from Hugging Face (transformers), read their documentation to do this.
     print("Loading the model ...") 
 
-    retriever = RagRetriever.from_pretrained(model_name, index_name="exact")
+    retriever = RagRetriever.from_pretrained(model_name, index_name="exact", use_dummy_dataset=True)
     pretrained_model = RagTokenForGeneration.from_pretrained(model_name, retriever=retriever, num_labels=2) 
     
     print("Moving model to device ..." + str(device))
