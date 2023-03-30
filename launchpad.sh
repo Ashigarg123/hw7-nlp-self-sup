@@ -7,7 +7,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=12:00:00
-#SBATCH --job-name="HW6 CS 601.471/671 homework"
+#SBATCH --job-name="HW7 CS 601.471/671 homework"
 
 
 module load anaconda
